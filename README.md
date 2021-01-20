@@ -1,6 +1,9 @@
 # ACM Research Coding Challenge (Spring 2021)
 
-The Library and Documentation I used for this project was Biopython. I used their resources on Genome Diagrams and created my own Circular Genome Diagram in Python. It accepts the genbank files given and assigns the color to the different genes in the diagram. It also labels the features names in order to show which gene is where on the strand. It is important to note that the complement strand is put on the inside of the diagram to indicate where the gene is located. 
-This diagram could be improved by possibly using multiple tracks in order to stop feature collision where you can't see specific parts of a gene.
+The Library and Documentation I used at first was solely Biopython. However, after trying to find a better way to display the features I came across the DNA features viewer It accepts the genbank files given and assigns the color to the different genes in the diagram. It also labels the features names in order to show which gene is where on the strand. It also solves the problem of feature collision I was dealing with previously when using Biopython making the genome diagram look much nicer in the process. The only downside to this diagram is I was not able to change the colors when adding features when they are read from the genbank file, hwoever you could allot specific colors to each feature if you did hardcode it.
 
-Source: https://biopython.org/
+This diagram could be improved by possibly using a scale within the diagram to show where on the strand the feaature is exactly (in bp) and also maybe include different colors for each feature.
+
+Source: https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer
+Source: https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer/
+
